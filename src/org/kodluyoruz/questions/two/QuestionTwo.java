@@ -24,6 +24,41 @@ public class QuestionTwo {
 		Scanner scannerNumberTwo = new Scanner(System.in);
 		System.err.print("Tam sayı girin :");
 		int numberTwo = scannerNumberOne.nextInt();
+		System.err.println("Toplama işlemi = 1");
+		System.err.println("Çıkartma işlemi = 2");
+		System.err.println("Çarpma işlemi = 3");
+		System.err.println("Bölme işlemi = 4");
+
+		Scanner scannerOperation = new Scanner(System.in);
+		System.err.print("Oparator belirtin :");
+		String operation = scannerOperation.nextLine();
+
+		switch (operation) {
+		case "1":
+			System.err.println("Resut : " + addition(numberOne, numberTwo));
+			break;
+		case "2":
+			System.err.println("Resut : " + multiplication(numberOne, numberTwo));
+			break;
+		case "3":
+			System.err.println("Resut : " + extraction(numberOne, numberTwo));
+			break;
+		case "4":
+			System.err.println("Resut : " + division(numberOne, numberTwo));
+			break;
+		default:
+			System.err.println("Invalid operator");
+			break;
+		}
+	}
+
+	static void fourAlternativeProcedures() {
+		Scanner scannerNumberOne = new Scanner(System.in);
+		System.err.print("Tam sayı girin :");
+		int numberOne = scannerNumberOne.nextInt();
+		Scanner scannerNumberTwo = new Scanner(System.in);
+		System.err.print("Tam sayı girin :");
+		int numberTwo = scannerNumberOne.nextInt();
 
 		Scanner scannerOperation = new Scanner(System.in);
 		System.err.print("Oparator belirtin :");
@@ -47,28 +82,27 @@ public class QuestionTwo {
 			System.err.println("Invalid operator");
 			break;
 		}
-
 	}
 
 	/*
 	 * dışarıdan gelen 2 tam sayıyı toplar
 	 */
-	static Double addition(int numberOne, int numberTwo) {
-		return (double) (numberOne + numberTwo);
+	static int addition(int numberOne, int numberTwo) {
+		return numberOne + numberTwo;
 	}
 
 	/*
 	 * dışarıdan gelen 2 tam sayıyı cıkartır
 	 */
-	static Double multiplication(int numberOne, int numberTwo) {
-		return (double) (numberOne - numberTwo);
+	static int multiplication(int numberOne, int numberTwo) {
+		return numberOne - numberTwo;
 	}
 
 	/*
 	 * dışarıdan gelen 2 tam sayıyı çarpar
 	 */
-	static Double extraction(int numberOne, int numberTwo) {
-		return (double) (numberOne * numberTwo);
+	static int extraction(int numberOne, int numberTwo) {
+		return numberOne * numberTwo;
 	}
 
 	/*
