@@ -29,6 +29,28 @@ public class QuestionFive {
 		}
 		System.err.println(
 				"Tek sayıların sayısı :" + singleArray.size() + " Çift sayıların sayısı : " + doubleArray.size());
+		printArray(doubleArray, singleArray);
+	}
+
+	static void printArray(List<Integer> doubleArray, List<Integer> singleArray) {
+		if (doubleArray.size() != 0) {
+			System.err.println(" ---------------Çift Sayılar Başlangıç---------------- ");
+			for (Integer doubleNumber : doubleArray) {
+				System.err.println(doubleNumber);
+			}
+			System.err.println(" ---------------Çift Sayılar Bitiş---------------- ");
+
+		}
+
+		if (singleArray.size() != 0) {
+			System.err.println(" ---------------Tek Sayılar Başlangıç---------------- ");
+			for (Integer singleNumber : singleArray) {
+				System.err.println(singleNumber);
+			}
+			System.err.println(" ---------------Tek Sayılar Bitiş---------------- ");
+
+		}
+
 	}
 
 	/*
