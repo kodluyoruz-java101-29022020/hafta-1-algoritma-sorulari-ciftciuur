@@ -37,7 +37,7 @@ public class QuestionOne {
 	 * dışarıdan sifrenin boş olma ihtimalini kontrol eder
 	 */
 	static boolean validatePassword(String password) {
-		if (password == null || "".equals(password)) {
+		if (password == null || " ".equals(password)) {
 			return false;
 		} else
 			return true;

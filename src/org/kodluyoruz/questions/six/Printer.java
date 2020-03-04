@@ -27,12 +27,6 @@ public class Printer {
 	 * gerekir bu sebepden main methoduna bağlı diğer tüm methodlar static
 	 * tanımlandı
 	 */
-	public static void main(String[] args) {
-		PDFDocument pdfDocument = new PDFDocument("pdfDocumentBody");
-		WordDocument wordDocument = new WordDocument("wordDocumentBody");
-		printPDFDocument(pdfDocument);
-		printWordDocument(wordDocument);
-	}
 
 	static void printPDFDocument(PDFDocument pdfDocument) {
 		if (pdfDocument != null)

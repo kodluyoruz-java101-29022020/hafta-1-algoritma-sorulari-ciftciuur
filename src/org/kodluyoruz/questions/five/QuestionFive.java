@@ -9,6 +9,8 @@ public class QuestionFive {
 	 * Rastgele sayılardan oluşan 100 elemanlık tamsayı dizisi oluşturun. Ardından
 	 * tek ve çift sayıları bulan bir program yazın.
 	 */
+	static Random rnd = new Random();
+
 	public static void main(String[] args) {
 		int[] array = fillArray(100);
 		// cift sayi dizisi
@@ -34,7 +36,6 @@ public class QuestionFive {
 	 * kadar 0-100 arasında rastgeke sayı üretir ve diziyi doldurur
 	 */
 	static int[] fillArray(int array_Length) {
-		Random rnd = new Random();
 		// istenen uzunluk kadar dizi olusturur
 		int[] array = new int[array_Length];
 		for (int i = 0; i < array_Length; i++) {
