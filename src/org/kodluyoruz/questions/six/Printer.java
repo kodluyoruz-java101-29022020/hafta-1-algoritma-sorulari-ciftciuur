@@ -28,13 +28,7 @@ public class Printer {
 	 * tanımlandı
 	 */
 
-	static void printPDFDocument(PDFDocument pdfDocument) {
-		if (pdfDocument != null)
-			System.out.println(pdfDocument.getBody());
-	}
-
-	static void printWordDocument(WordDocument wordDocument) {
-		if (wordDocument != null)
-			System.out.println(wordDocument.getBody());
+	static void print(DocumentInterface documentInterface) {
+		System.out.println(documentInterface.getBody());
 	}
 }
