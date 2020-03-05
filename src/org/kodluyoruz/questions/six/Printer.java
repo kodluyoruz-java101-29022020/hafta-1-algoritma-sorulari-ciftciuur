@@ -28,8 +28,7 @@ public class Printer {
 	 * tanımlandı
 	 */
 
-	static void print(String body) {
-		if (body != null)
-			System.out.println(body);
+	static void print(DocumentInterface documentInterface) {
+		System.out.println(documentInterface.getBody());
 	}
 }
