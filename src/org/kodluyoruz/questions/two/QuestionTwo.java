@@ -16,34 +16,33 @@ public class QuestionTwo {
 	 * 
 	 * 
 	 */
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Scanner scannerNumberOne = new Scanner(System.in);
+
 		System.err.print("Tam sayı girin :");
-		int numberOne = scannerNumberOne.nextInt();
-		Scanner scannerNumberTwo = new Scanner(System.in);
+		int numberOne = scanner.nextInt();
 		System.err.print("Tam sayı girin :");
-		int numberTwo = scannerNumberOne.nextInt();
+		int numberTwo = scanner.nextInt();
 		System.err.println("Toplama işlemi = 1");
 		System.err.println("Çıkartma işlemi = 2");
 		System.err.println("Çarpma işlemi = 3");
 		System.err.println("Bölme işlemi = 4");
 
-		Scanner scannerOperation = new Scanner(System.in);
 		System.err.print("Oparator belirtin :");
-		String operation = scannerOperation.nextLine();
+		byte operation = scanner.nextByte();
 
 		switch (operation) {
-		case "1":
+		case 1:
 			System.err.println("Resut : " + addition(numberOne, numberTwo));
 			break;
-		case "2":
+		case 2:
 			System.err.println("Resut : " + multiplication(numberOne, numberTwo));
 			break;
-		case "3":
+		case 3:
 			System.err.println("Resut : " + extraction(numberOne, numberTwo));
 			break;
-		case "4":
+		case 4:
 			System.err.println("Resut : " + division(numberOne, numberTwo));
 			break;
 		default:
@@ -53,16 +52,13 @@ public class QuestionTwo {
 	}
 
 	static void fourAlternativeProcedures() {
-		Scanner scannerNumberOne = new Scanner(System.in);
 		System.err.print("Tam sayı girin :");
-		int numberOne = scannerNumberOne.nextInt();
-		Scanner scannerNumberTwo = new Scanner(System.in);
+		int numberOne = scanner.nextInt();
 		System.err.print("Tam sayı girin :");
-		int numberTwo = scannerNumberOne.nextInt();
+		int numberTwo = scanner.nextInt();
 
-		Scanner scannerOperation = new Scanner(System.in);
 		System.err.print("Oparator belirtin :");
-		String operation = scannerOperation.nextLine();
+		String operation = scanner.nextLine();
 
 		// + - * / yi okuyup ona göre işlem seçer
 		switch (operation) {
